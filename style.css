@@ -1,8 +1,39 @@
-.container{
-    border: 1px solid black;
+body{
+    background: rgb(131, 255, 208);
 }
 
-.container h1 {
-    text-transform: uppercase;
+.container{
+    /*border: 1px solid black;*/
+
+    width: 95%;
+    height: 100vh;
+    display: flex;
     text-align: center;
+}
+
+.quotes{
+    width: 900px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    color: gray;
+    background-color: white;
+    border: 10px solid #666666;
+
+}
+
+.quotes p, .quotes h3{
+    /*Remember that a rem === to 16 pixels, 
+    where 1.5 rem would therefore be 24 pixels.*/
+    font-size: 1.5rem;
+}
+
+@media(max-width:480px){
+    .quotes p, .quotes h3{
+        font-size: 1.5rem;
+    }
 }
